@@ -1,5 +1,36 @@
-# fitness-logger
-Fitness Logger is a full-stack web application built using the MERN stack (MongoDB, Express.js, React, Node.js) that helps users track workouts, monitor progress, and stay motivated on their fitness journey.
+# 🏋️ Fitness Logger
+
+## 📌 Description
+Developed a full-stack web application to track exercises, maintain streaks, and visualize fitness progress through interactive graphs. The platform helps users stay consistent and motivated by setting achievable goals and monitoring daily performance.
+
+---
+
+## 🚀 Tech Stack
+- **Frontend:** React.js, HTML, CSS, JavaScript  
+- **Backend:** Node.js, Express.js  
+- **Database:** MongoDB  
+- **Other:** REST APIs  
+
+---
+
+## ✨ Features
+- 🔐 User authentication using college credentials (PESU login system)
+- ➕ Add, edit, and delete exercises  
+- 🔥 Track exercise streaks and daily summaries  
+- 📊 Interactive progress graphs for visualization  
+- 🎯 Set and monitor fitness goals  
+- ⚡ Smooth backend integration using REST APIs  
+
+---
+
+## 🧠 Learning Outcomes
+- Gained hands-on experience in full-stack development using the MERN stack  
+- Built and integrated REST APIs for efficient data handling  
+- Implemented user authentication and protected routes  
+- Learned best practices in state management and responsive UI design  
+
+
+
 
 2. Backend Setup
 cd server
