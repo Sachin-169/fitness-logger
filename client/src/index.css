@@ -1,0 +1,552 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: #222831;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.navbar {
+  background: #222831;
+  color: #DFD0B8;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 20px;
+}
+
+.navbar a {
+  color: #dfd0b8;
+  text-decoration: none;
+  margin-right: 15; 
+}
+
+.card {
+  background: #222831;
+  color: #DFD0B8;
+  padding: 20px;
+  margin: 50px auto;
+}
+
+h2{
+  margin-left: 300px;
+  color: #DFD0B8;
+}
+
+input {
+  text-align: center;
+  width: 75%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #000000;
+  background-color: #DFD0B8;
+  border-radius: 6px;
+}
+
+button {
+  background: #dfd0b8;
+  color: black;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 16px;
+  cursor: pointer;
+  margin: 3px;
+}
+button:hover {
+  background: #948979;
+  color: #222831;
+}
+
+.loginbut{
+  position: relative;
+  margin-left: 300px;
+}
+
+
+.month-counter {
+  text-align: center;
+  font-size: 1.1rem;
+  background: #1f2937;
+  color: #3b82f6;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.log-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+label {
+  font-weight: 600;
+  color: #d1d5db;
+}
+
+select,
+input[type="text"],
+input[type="date"],
+input[type="number"] {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #3b82f6;
+  background-color: #111827;
+  color: white;
+}
+
+select:focus,
+input:focus {
+  outline: none;
+  border-color: #60a5fa;
+  box-shadow: 0 0 6px #3b82f6;
+}
+
+.exercise-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.exercise-row input {
+  flex: 1;
+}
+
+.add-btn {
+  background: transparent;
+  border: 1px dashed #3b82f6;
+  color: #3b82f6;
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.add-btn:hover {
+  background: #3b82f6;
+  color: white;
+}
+
+.remove-btn {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 6px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  background: #dc2626;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-container button {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-container button:hover {
+  background: #2563eb;
+  transform: scale(1.05);
+}
+.access-denied {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  text-align: center;
+  background: #DFD0B8;  
+  color: #000000;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  animation: dropIn 3s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+@keyframes dropIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px) scale(0.95);
+  }
+  70% {
+    opacity: 1;
+    transform: translateY(10px) scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+.access-denied p {
+  color: #222831; 
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.access-denied a {
+  color: #222831; 
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid #222831;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.access-denied a:hover {
+  background: #222831;
+  color: #DFD0B8;
+  transform: scale(1.05);
+}
+
+.start-btn {
+  background: #10b981;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.start-btn:hover {
+  background: #059669;
+}
+
+.stop-btn {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.stop-btn:hover {
+  background: #dc2626;
+}
+
+.add-btn {
+  margin-top: 10px;
+  background: transparent;
+  color: #3b82f6;
+  border: 1px dashed #3b82f6;
+  border-radius: 6px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+.add-btn:hover {
+  background: #3b82f6;
+  color: white;
+}
+
+.exercise-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.exercise-row input {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.add-btn {
+  background: transparent;
+  border: 1px dashed #3b82f6;
+  color: #3b82f6;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.add-btn:hover {
+  background: #3b82f6;
+  color: white;
+}
+
+.start-btn,
+.stop-btn {
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+}
+.start-btn {
+  background: #16a34a;
+  color: white;
+}
+.start-btn:hover {
+  background: #15803d;
+}
+.stop-btn {
+  background: #ef4444;
+  color: white;
+}
+.stop-btn:hover {
+  background: #dc2626;
+}
+
+
+
+.react-calendar-heatmap .color-empty {
+  fill: #1f2937;}
+.react-calendar-heatmap .color-scale-1 {
+  fill: #60a5fa; 
+}
+.react-calendar-heatmap .color-scale-2 {
+  fill: #3b82f6; 
+}
+.react-calendar-heatmap .color-scale-3 {
+  fill: #2563eb; 
+}
+.react-calendar-heatmap .color-scale-4 {
+  fill: #1d4ed8; 
+}
+.react-calendar-heatmap text {
+  fill: #9ca3af; 
+}
+.card {
+  background: #0f172a;
+  color: #f3f4f6;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* --- New Styles for Set-by-Set Logging in LogWorkout.jsx --- */
+
+.exercise-item-container {
+  /* Use the existing card class for a clean, contained look for each exercise */
+  /* Remove default card margin */
+  margin-bottom: 20px !important; 
+}
+
+.set-row-header {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr 0.2fr; /* Set, Reps, Weight, Action */
+  gap: 10px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--border-color);
+  align-items: center;
+}
+
+.set-row {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr 0.2fr; /* Set, Reps, Weight, Action */
+  gap: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.set-row input {
+  /* Style for input fields within a set row */
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.set-number {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.icon-btn:hover {
+  opacity: 1;
+}
+
+.add-btn {
+  /* Ensure the add set button aligns correctly */
+  width: auto !important;
+  font-size: 1rem !important;
+  padding: 8px 15px !important;
+}
+
+/* Ensure form-input style is applied to the exercise name input */
+.form-input {
+  /* Ensure this class exists in your CSS with appropriate styles */
+}
+
+/* --- Styles for Routines Page (to match iOS-like list view) --- */
+
+.routines-page {
+  padding: 0; /* Remove container padding for full width list look */
+  margin-top: -30px; /* Pull up closer to the Navbar */
+}
+
+.routines-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  /* Use app background color */
+  background: #222831; 
+  color: #F3F4F6;
+}
+
+.routines-header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  /* Override default h2 margin */
+  margin-left: 0 !important; 
+}
+
+.add-btn-round {
+  background: transparent;
+  color: #3b82f6; /* A common color for action buttons */
+  border: none;
+  font-size: 2rem;
+  font-weight: 300;
+  padding: 0;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.add-btn-round:hover {
+  color: #60a5fa;
+  background: transparent;
+}
+
+
+.routines-list-container {
+  /* Use the dark background from the card, but simplify the appearance */
+  background: #111827; /* Slightly lighter dark for the list background */
+  padding: 0;
+  margin: 20px 0;
+  border-radius: 10px;
+  overflow: hidden; /* Ensures borders/dividers don't bleed */
+}
+
+.routine-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  color: #F3F4F6;
+  font-size: 1.1rem;
+  cursor: pointer;
+  background: #111827;
+  transition: background 0.1s ease-in-out;
+  border-bottom: 1px solid #374151; /* Divider line */
+}
+
+.routine-item:last-child {
+  border-bottom: none; /* Remove divider for the last item */
+}
+
+.routine-item:hover {
+  background: #1f2937; /* Slight hover effect */
+}
+
+.chevron-icon {
+  color: #6b7280; /* Gray for the accessory arrow */
+  font-size: 0.9rem;
+}
+
+/* --- New Styles for RoutineDetails.jsx --- */
+
+.routines-header button.back-btn {
+  background: none;
+  border: none;
+  color: #3b82f6; /* Blue link color */
+  font-size: 1.1rem;
+  padding: 0;
+  cursor: pointer;
+}
+
+.routines-details-container {
+  /* Inherits from .routines-list-container but with padding for content */
+  background: #111827; 
+  padding: 0 20px; /* Add horizontal padding back */
+  margin: 20px 0;
+  border-radius: 10px;
+}
+
+.details-header {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 0.2fr; /* Name, Sets, Reps, Action */
+  gap: 10px;
+  font-weight: 600;
+  color: #9ca3af; 
+  padding: 15px 0 8px 0;
+  border-bottom: 1px solid #374151;
+}
+
+.exercise-detail-item {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 0.2fr;
+  gap: 10px;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #374151;
+  font-size: 1rem;
+}
+
+.exercise-detail-item:last-of-type {
+  border-bottom: none;
+}
+
+.ex-name {
+  font-weight: 500;
+  color: #F3F4F6;
+}
+
+.remove-btn-small {
+    color: #ef4444; 
+    opacity: 0.6;
+}
+
+.remove-btn-small:hover {
+    opacity: 1;
+}
+
+
+.inline-row {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.inline-card {
+  flex: 1;
+  min-width: 280px;
+}

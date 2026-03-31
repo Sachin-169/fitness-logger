@@ -1,0 +1,92 @@
+.card {
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.card-subtitle {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+
+.log-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 15px;
+}
+.log-header h3 {
+  font-size: 1.5rem;
+}
+.log-header .date {
+  font-size: 1rem;
+  color: var(--text-secondary);
+}
+.log-header .duration {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.exercise-item {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid var(--border-color);
+}
+.exercise-item h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.exercise-item p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+.exercise-item .set {
+  font-size: 1rem;
+  color: var(--text-primary);
+  margin-top: 5px;
+}
+
+.leaderboard-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.leaderboard-item .info {
+  display: flex;
+  align-items: center;
+}
+.leaderboard-item .icon {
+  font-size: 1.5rem;
+  margin-right: 15px;
+  color: var(--text-secondary);
+}
+.leaderboard-item .details p {
+  font-weight: 600;
+}
+.leaderboard-item .details span {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+.leaderboard-item .duration {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.chart-placeholder {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed var(--border-color);
+  border-radius: 8px;
+}
